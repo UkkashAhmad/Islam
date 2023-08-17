@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zakat Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <body>
+
+
+
+        <nav class="navbar bg-primary navbar-expand-lg " data-bs-theme="dark">
+
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">ISDP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Zakat</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                 
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+<div style="background-color: aquamarine;">
+
+
+
+        <div class="container">
+        <h1 style="text-align: center;">Hello World</h1>
+        <h2>Q: What is Zakat</h2>
+        <h4>ANS: ZakatZakat is an Islamic financial term. As one of the pillars of the faith, it requires all Muslims to donate a portion of their wealth to charity. Muslims must meet a certain threshold before they can qualify for zakat. The amount is 2.5% or 1/40 of an individual's total savings and wealth. Zakat can be paid at any time during the lunar year. Some Islamic countries require citizens to pay zakat while others do not.</h4>
+       <hr>
+        <table>
+            <th>
+        <h3>If You Have Any Items Which listed Below while Whole Year You Have To Pay Zakat</h3></th>
+        <ol>
+            <li>If one has only gold, then 7.5 tolas of gold, </li>
+            <li>and if only silver, 52.5 tolas of silver,</li>
+            <li>or cash or merchandise equal to the value of either of them</li>
+            <li>or all of them together or some of them</li>
+        </ol>
+        </table>
+       <hr>
+        <h4>If the total value is equal to the amount of silver, then two and a half percent of the Zakatable wealth must be paid on such a person at the end of the year.
+
+            It should be clear that the scope of Zakat is only on seven and a half tolas of gold when there is nothing of any other kind, but if there is some other property along with gold, then the scope of the duty of Zakat will be on fifty two and a half tolas of silver. Only God knows.</h4>
+            <br>
+
+
+
+
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="Gold" placeholder="Type Gold weight in Tola..">
+                <label for="floatingInput">How Many Tola Gold u Have</label>
+                <button type="button" onclick="calculateGold()" class="btn btn-primary">Check</button>
+
+                <h1 id="Print"></h1>
+              </div>
+              <div class="form-floating">
+                <input type="number" class="form-control" id="Silver" placeholder="Type Silver weight in Tola">
+                <label for="Silver">How Many Tola Silver u Have</label>
+                <button type="button" onclick="calculateSilver()" class="btn btn-primary">Check</button>
+                <h1 id="Print1"></h1>
+              </div>
+
+
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="Money" placeholder="How Much Money u Have..">
+                <label for="Money">How Much Money u Have</label>
+                <button type="button" onclick="calculateMoney()" class="btn btn-primary">Check</button>
+                <h1 id="Print2"></h1>
+              </div>
+
+
+              <div class="form-floating">
+                <input type="number" class="form-control" id="Buss" placeholder="How Much Value of Your goods trade ..">
+                <label for="Buss">How Much Value of Your goods trade</label>
+                <button type="button" onclick="calculateBuss()" class="btn btn-primary">Check</button>
+                <h1 id="Print3"></h1>
+              </div>
+
+
+
+
+<!-- 
+        <label for="Gold">How Many Tola Gold u Have</label>
+        <input type="number" id="Gold" placeholder="Type Gold weight in Tola..">
+        <button type="button" onclick="calculateGold()">Check</button>
+        <h1 id="Print"></h1> -->
+    
+        <!-- <label for="Silver">How Many Tola Silver u Have</label>
+        <input type="number" id="Silver" placeholder="Type Silver weight in Tola..">
+        <button type="button" onclick="calculateSilver()">Check</button>
+        <h1 id="Print1"></h1> -->
+    
+        <!-- <label for="Money">How Much Money u Have</label>
+        <input type="number" id="Money" placeholder="How Much Money u Have..">
+        <button type="button" onclick="calculateMoney()">Check</button>
+        <h1 id="Print2"></h1>
+     -->
+        <!-- <label for="Buss">How Much Money u Have</label>
+        <input type="number" id="Buss" placeholder="How Much Money u Have..">
+        <button type="button" onclick="calculateBuss()">Check</button>
+        <h1 id="Print3"></h1> -->
+    
+        
+        <label for="button" style="font-size: larger; font-family: 'Times New Roman', Times, serif;">Your Total Amount Value</label>
+        <button type="button" onclick="calculateSum()" class="btn btn-primary btn-lg">TOTAL PKR!!</button>
+        <h1 id="Print4"></h1>
+
+
+
+
+
+        <!-- <button type="button" onclick="calculateSum()">Sum</button>
+        <h1 id="Print4"></h1> -->
+
+
+
+        <div class="form-floating">
+            <input type="number" class="form-control" id="input5" placeholder="Type Amount Value....">
+            <label for="input5">Type Your Total Amount From Sum</label>
+            <button type="button" onclick="calculateZakat()" class="btn btn-primary">Generate Zakat</button>
+            <h1 id="Print5"></h1>
+          </div>
+
+
+
+    
+        <!-- <label for="button">Your Total Zakat</label>
+        <input type="number" id="input5" placeholder="Type Amount Value..">
+        <button type="button" onclick="calculateZakat()">Zakat</button>
+        <h1 id="Print5"></h1> -->
+    
+    </div>
+</div>
+        <script>
+            function calculateGold() {
+                let input = document.getElementById('Gold').value;
+                let goldPrice = input * 225100;
+                document.getElementById('Print').innerHTML = `This is Your ${input} Tola Gold Price PKR:${goldPrice}`;
+                return goldPrice;
+            }
+    
+            function calculateSilver() {
+                let input1 = document.getElementById('Silver').value;
+                let silverPrice = input1 * 2455;
+                document.getElementById('Print1').innerHTML = `This is Your ${input1} Tola Silver Price PKR:${silverPrice}`;
+                return silverPrice;
+            }
+    
+            function calculateMoney() {
+                let input2 = document.getElementById('Money').value;
+                document.getElementById('Print2').innerHTML = `This is Your Money PKR:${input2}`;
+                return parseFloat(input2);
+            }
+    
+            function calculateBuss() {
+                let input3 = document.getElementById('Buss').value;
+                document.getElementById('Print3').innerHTML = `This is Your Goods trade value PKR:${input3}`;
+                return parseFloat(input3);
+            }
+    
+            function calculateSum() {
+                let sum = calculateGold() + calculateSilver() + calculateMoney() + calculateBuss();
+                document.getElementById('Print4').innerHTML = `Your Total Amount Value PKR:${sum}`;
+                
+            }
+            function calculateZakat() {
+                let input5=document.getElementById('input5').value
+                let calcualte=(input5*2.5)/100
+                document.getElementById('Print5').innerHTML=` This is Your Zakat Amount PKR:${calcualte}`
+            }
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
